@@ -20,7 +20,7 @@ public class ExemplosAutomacaoAppium {
     public void before() throws MalformedURLException {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
-        options.setPlatformVersion("10.0");
+        options.setPlatformVersion("11.0");
         options.setAutomationName("UiAutomator2");
         options.setDeviceName("emulator-5554");
         options.setApp("C:\\Users\\Windows\\Desktop\\Projeto Intellij\\automatizacaoMobile\\src\\test\\resources\\ApiDemos-debug.apk");
