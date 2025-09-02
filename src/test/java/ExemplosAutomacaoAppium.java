@@ -94,16 +94,7 @@ public class ExemplosAutomacaoAppium {
 
     }
 
-    @Test
-    public void recorded(){
-        WebElement el1 = driver.findElement(AppiumBy.accessibilityId("Views"));
-        el1.click();
-        WebElement el2 = driver.findElement(AppiumBy.accessibilityId("Drag and Drop"));
-        el2.click();
-        WebElement el3 = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_dot_1"));
-        el3.click();
 
-    }
 
 
 }
