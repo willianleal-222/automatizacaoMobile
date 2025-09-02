@@ -68,6 +68,7 @@ public class ExemplosAutomacaoAppium {
 
     @Test
     public void webViewTest() {
+
         driver.findElement(AppiumBy.accessibilityId("Views")).click();
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("
                 + "new UiSelector().text(\"WebView\"));"));
@@ -93,9 +94,6 @@ public class ExemplosAutomacaoAppium {
          el3.click();
 
     }
-
-
-     @Test
 
 
 }
