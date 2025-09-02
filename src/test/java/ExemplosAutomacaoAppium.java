@@ -80,24 +80,19 @@ public class ExemplosAutomacaoAppium {
         Assert.assertTrue(driver.getPageSource().contains("Hello World"));
         driver.context((String) handles[0]);
 
-
     }
+
+
      @Test
     public void recorded(){
          WebElement el1 = driver.findElement(AppiumBy.accessibilityId("Views"));
          el1.click();
-// Code generation for action 'elementClick' is not currently supported
          WebElement el2 = driver.findElement(AppiumBy.accessibilityId("Drag and Drop"));
          el2.click();
-// Code generation for action 'elementClick' is not currently supported
          WebElement el3 = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_dot_1"));
          el3.click();
-// Code generation for action 'elementClick' is not currently supported
 
-
-     }
-
-
+    }
 
 
 
