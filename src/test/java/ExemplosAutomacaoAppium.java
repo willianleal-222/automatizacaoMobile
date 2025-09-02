@@ -95,7 +95,7 @@ public class ExemplosAutomacaoAppium {
     }
 
 
-
+     @Test
 
 
 }
