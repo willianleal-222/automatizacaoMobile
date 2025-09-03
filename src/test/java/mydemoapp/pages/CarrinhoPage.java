@@ -21,6 +21,7 @@ public class CarrinhoPage extends BasePage {
     public void alterarQuantidadeParaTres() {
         driver.findElement(AppiumBy.xpath(btnAdicionarItemCarrinho)).click();
         driver.findElement(AppiumBy.xpath(btnAdicionarItemCarrinho)).click();
+        driver.findElement(AppiumBy.xpath(btnAdicionarItemCarrinho)).click();
     }
 
 
