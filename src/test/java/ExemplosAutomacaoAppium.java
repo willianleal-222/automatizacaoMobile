@@ -18,9 +18,10 @@ public class ExemplosAutomacaoAppium {
 
     @Before
     public void before() throws MalformedURLException {
+
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
-        options.setPlatformVersion("11.0");
+        options.setPlatformVersion("10.0");
         options.setAutomationName("UiAutomator2");
         options.setDeviceName("emulator-5554");
         options.setApp("C:\\Users\\Windows\\Desktop\\Projeto Intellij\\automatizacaoMobile\\src\\test\\resources\\ApiDemos-debug.apk");
@@ -32,6 +33,7 @@ public class ExemplosAutomacaoAppium {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(AppiumBy.id("com.android.permissioncontroller:id/continue_button")).click();
         driver.findElement(AppiumBy.id("android:id/button1")).click();
+
     }
 
     @Test
@@ -83,14 +85,16 @@ public class ExemplosAutomacaoAppium {
     }
 
 
-     @Test
+    @Test
     public void recorded(){
-         WebElement el1 = driver.findElement(AppiumBy.accessibilityId("Views"));
-         el1.click();
-         WebElement el2 = driver.findElement(AppiumBy.accessibilityId("Drag and Drop"));
-         el2.click();
-         WebElement el3 = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_dot_1"));
-         el3.click();
+
+        WebElement el2 = driver.findElement(AppiumBy.accessibilityId("Views"));
+        el2.click();
+        WebElement el3 = driver.findElement(AppiumBy.accessibilityId("Drag and Drop"));
+        el3.click();
+        WebElement el4 = driver.findElement(AppiumBy.id("io.appium.android.apis:id/drag_dot_1"));
+        el4.click();
+
 
     }
 
