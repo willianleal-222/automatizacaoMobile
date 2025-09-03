@@ -97,8 +97,6 @@ public class ExemplosAutomacaoAppium {
         el3.click();
 
 
-
-
     }
 
 
