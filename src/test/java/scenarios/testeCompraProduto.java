@@ -37,6 +37,7 @@ public class testeCompraProduto {
     @Test
     public void testeCompraProduto(){
         homePage.clicarporXpath(homePage.produto);
+        homePage.clicarporXpath(homePage.xpathAddCarrinho);
 
 
 
