@@ -43,6 +43,8 @@ public class testeCompraProduto {
         homePage.clicarporXpath(homePage.xpathAddCarrinho);
         homePage.clicarporXpath(homePage.btnCarrinho);
         carrinhoPage.alterarQuantidadeParaTres();
+        carrinhoPage.clicarporXpath(carrinhoPage.xpathIrParaCheckout);
+
 
 
 

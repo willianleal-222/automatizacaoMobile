@@ -3,7 +3,7 @@ package mydemoapp.pages;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
     AndroidDriver driver;
 
@@ -14,14 +14,12 @@ public class HomePage {
     public String btnCarrinho = "//android.view.ViewGroup[@content-desc=\"cart badge\"]/android.widget.ImageView";
 
     public HomePage(AndroidDriver driverScenario){
-        this.driver = driverScenario;
+        super(driverScenario);
+        super.driver = driverScenario;
+
 
     }
 
-    public void clicarporXpath(String elemento){
-        driver.findElement(AppiumBy.xpath(elemento)).click();
-
-    }
 
 
 }
