@@ -1,0 +1,25 @@
+package mydemoapp.pages;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
+
+public class HomePage {
+
+    AndroidDriver driver;
+
+    public String produto = "(//android.view.ViewGroup[@content-desc=\"store item\"])[1]/android.view.ViewGroup[1]/android.widget.ImageView";
+
+    public String xpathAddCarrinho = "//android.widget.TextView[@text=\"Add To Cart\"]";
+
+    public HomePage(AndroidDriver driverScenario){
+        this.driver = driverScenario;
+
+    }
+
+    public void clicarporXpath(String elemento){
+        driver.findElement(AppiumBy.xpath(elemento)).click();
+
+    }
+
+
+}
