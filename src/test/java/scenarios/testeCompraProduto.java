@@ -3,6 +3,7 @@ package scenarios;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import mydemoapp.pages.CarrinhoPage;
+import mydemoapp.pages.CheckoutPage;
 import mydemoapp.pages.HomePage;
 import mydemoapp.pages.LoginPage;
 import org.junit.Before;
@@ -18,6 +19,7 @@ public class testeCompraProduto {
     HomePage homePage;
     CarrinhoPage carrinhoPage;
     LoginPage loginPage;
+    CheckoutPage checkoutPage;
 
 
     @Before
@@ -37,6 +39,7 @@ public class testeCompraProduto {
         homePage = new HomePage(driver);
         carrinhoPage = new CarrinhoPage(driver);
         loginPage = new LoginPage(driver);
+        checkoutPage = new CheckoutPage(driver);
 
 
     }
@@ -51,6 +54,12 @@ public class testeCompraProduto {
         loginPage.preencherCampoTextoPorAccId(loginPage.inputIdUsername, "bob@example.com");
         loginPage.preencherCampoTextoPorAccId(loginPage.imputIdPassword, "10203040");
         loginPage.clicarPorAccId(loginPage.btnIdLogin);
+        checkoutPage.preencherCampoTextoPorAccId(checkoutPage.inputIdNome,"Williian QA");
+        checkoutPage.preencherCampoTextoPorAccId(checkoutPage.inputIdEndereco,"Rua 2, 48");
+        checkoutPage.preencherCampoTextoPorAccId(checkoutPage.inputIdCidade,"Arcos");
+        checkoutPage.preencherCampoTextoPorAccId(checkoutPage.inputIdCodigoPostal,"89750");
+        checkoutPage.preencherCampoTextoPorAccId(checkoutPage.inputIdPais,"United Kingdom");
+        checkoutPage.clicarPorAccId(checkoutPage.btnIdIrParaPagamento);
 
 
 
